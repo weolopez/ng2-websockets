@@ -18,6 +18,8 @@ export class DataComponent implements OnInit{
 	}
 
 	ngOnInit(){
+		/**
+		 * 
 		this.chatService.randomData.subscribe(num => {
 			this.randomData.push(num);
 			// reset if there are 20 numbers in the array
@@ -25,5 +27,6 @@ export class DataComponent implements OnInit{
 				this.randomData = [];
 			}
 		})
+		 */
 	}
 }

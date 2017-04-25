@@ -4,7 +4,7 @@ import {WebSocketService} from './websocket.service';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/filter';
 
-const CHAT_URL = 'ws://localhost:3005';
+const CHAT_URL = 'ws://echo.websocket.org';
 const DATA_URL = 'ws://localhost:3006';
 
 export interface Message {
@@ -32,12 +32,14 @@ export class ChatService {
 				}
 			});
 
-
+/**
+ * 
 		// 2. subscribe to random data
 		this.randomData = <Subject<number>>this.wsService
 			.connectData(DATA_URL)
 			.map((response: any): number => {
 				return response.data;
 			})
+ */
 	}
 } // end class ChatService
